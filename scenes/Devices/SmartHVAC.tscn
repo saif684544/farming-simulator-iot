@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/SmartHVAC.gd" id="1"]
+
+[node name="SmartHVAC" type="Node3D"]
+script = ExtResource("1")
+device_id = "hvac"
+start_powered = true
+interact_point = Vector3(0, 1, 1.5)
+interact_radius = 1.8
+label_offset = Vector3(0, 1.45, 0)

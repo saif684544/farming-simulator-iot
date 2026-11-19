@@ -1,0 +1,64 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="IoT Smart Farm Simulator"
+config/description="Interactive 3D showcase of a virtual, SmartThings-inspired IoT smart farm. All devices are simulated in-game."
+config/version="1.0.0"
+run/main_scene="res://scenes/Boot.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(0.05, 0.07, 0.1, 1)
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+PlatformManager="*res://scripts/managers/PlatformManager.gd"
+GameSettings="*res://scripts/managers/GameSettings.gd"
+InputManager="*res://scripts/managers/InputManager.gd"
+AudioManager="*res://scripts/managers/AudioManager.gd"
+EnvironmentManager="*res://scripts/managers/EnvironmentManager.gd"
+DeviceManager="*res://scripts/managers/DeviceManager.gd"
+AutomationManager="*res://scripts/managers/AutomationManager.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
+window/energy_saving/keep_screen_on=true
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=false
+pointing/emulate_mouse_from_touch=true
+
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="player"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+anti_aliasing/quality/msaa_3d=2
+lights_and_shadows/directional_shadow/size=4096
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=2
+environment/defaults/default_clear_color=Color(0.05, 0.07, 0.1, 1)

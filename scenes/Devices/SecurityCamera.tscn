@@ -1,0 +1,13 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/SecurityCamera.gd" id="1"]
+
+[node name="SecurityCamera" type="Node3D"]
+script = ExtResource("1")
+device_id = "security_camera"
+start_powered = true
+head_position = Vector3(0, 2.45, 0)
+aim_offset = Vector3(4.38, -1.6, -3.38)
+interact_point = Vector3(0.58, 1, -0.78)
+interact_radius = 1.4
+label_offset = Vector3(0, 2.0, -0.3)

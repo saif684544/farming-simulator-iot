@@ -1,0 +1,10 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/MotionSensor.gd" id="1"]
+
+[node name="MotionSensor" type="Node3D"]
+script = ExtResource("1")
+device_id = "motion_sensor"
+interact_point = Vector3(1.0, 1, -0.4)
+interact_radius = 1.4
+label_offset = Vector3(0.6, 2.0, -0.6)

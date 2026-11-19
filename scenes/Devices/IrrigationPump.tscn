@@ -1,0 +1,10 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/IrrigationPump.gd" id="1"]
+
+[node name="IrrigationPump" type="Node3D"]
+script = ExtResource("1")
+device_id = "irrigation_pump"
+interact_point = Vector3(0, 0.5, -1.3)
+interact_radius = 1.8
+label_offset = Vector3(0, 1.4, 0)

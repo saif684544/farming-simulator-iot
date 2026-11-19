@@ -1,0 +1,10 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/MoistureSensor.gd" id="1"]
+
+[node name="MoistureSensor" type="Node3D"]
+script = ExtResource("1")
+device_id = "soil_sensor"
+interact_point = Vector3(0, 0.5, 1.6)
+interact_radius = 1.8
+label_offset = Vector3(0, 0.75, 0)

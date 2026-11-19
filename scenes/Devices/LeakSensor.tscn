@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/LeakSensor.gd" id="1"]
+
+[node name="LeakSensor" type="Node3D"]
+script = ExtResource("1")
+device_id = "leak_sensor"
+leak_point = Vector3(-0.4, 0.3, 0.45)
+interact_point = Vector3(0.4, 0.5, -0.9)
+interact_radius = 1.5
+label_offset = Vector3(0.2, 0.95, 0)

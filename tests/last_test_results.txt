@@ -1,0 +1,51 @@
+IoT Smart Farm Simulator - automated tests
+Godot 4.7.2-stable (official)  |  2026-11-20T01:13:55
+
+== test_devices.gd
+  PASS  test_devices_initialize
+  PASS  test_connect_and_disconnect
+  PASS  test_state_change_emits_signals
+  PASS  test_sensor_readings_emit_signal
+  PASS  test_sensor_readings_stay_in_valid_ranges
+  PASS  test_light_sensor_follows_time_of_day
+  PASS  test_pump_needs_plug_power
+  PASS  test_moisture_dries_and_rises_with_irrigation
+  PASS  test_fan_cools_greenhouse
+== test_automation.gd
+  PASS  test_moisture_below_30_activates_irrigation
+  PASS  test_moisture_reaching_65_deactivates_irrigation
+  PASS  test_temperature_above_32_activates_fan
+  PASS  test_temperature_exactly_32_does_not_trigger
+  PASS  test_temperature_below_28_deactivates_fan
+  PASS  test_low_ambient_light_activates_lighting
+  PASS  test_disabled_rule_does_not_act_and_releases_devices
+  PASS  test_offline_sensor_pauses_rule
+  PASS  test_hub_offline_pauses_all_rules
+  PASS  test_manual_override_between_thresholds_is_respected
+  PASS  test_scenarios_trigger_rules
+== test_integration.gd
+  PASS  test_hub_recognizes_devices
+  PASS  test_device_manager_tracks_status
+  PASS  test_automation_controls_real_devices_closed_loop
+  PASS  test_ui_reflects_device_state
+  PASS  test_manual_controls
+  PASS  test_main_scene_loads
+== test_smart_devices.gd
+  PASS  test_new_devices_initialize
+  PASS  test_devices_can_go_offline
+  PASS  test_hvac_heats_a_cold_greenhouse
+  PASS  test_hvac_modes_and_setpoints
+  PASS  test_strong_sun_closes_shade
+  PASS  test_irrigation_waits_for_closed_valve
+  PASS  test_leak_closes_valve_and_reopens_after_repair
+  PASS  test_motion_sensor_field_of_view
+  PASS  test_motion_at_night_turns_floodlight_on_then_off
+  PASS  test_motion_in_daylight_keeps_floodlight_off
+  PASS  test_lock_and_door_rules
+  PASS  test_night_lockdown_waits_for_door_to_close
+  PASS  test_smoke_alarm_sounds_siren_and_unlocks
+  PASS  test_disabling_rules_releases_devices
+  PASS  test_dashboard_groups_devices_and_uses_device_wording
+  PASS  test_device_panel_renders_choice_stepper_and_camera
+
+RESULT: 42 passed, 0 failed  (4195 ms)

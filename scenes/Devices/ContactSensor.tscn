@@ -1,0 +1,10 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/ContactSensor.gd" id="1"]
+
+[node name="ContactSensor" type="Node3D"]
+script = ExtResource("1")
+device_id = "door_contact"
+interact_point = Vector3(0.77, -1, -0.77)
+interact_radius = 1.1
+label_offset = Vector3(0.2, 0.55, -0.25)

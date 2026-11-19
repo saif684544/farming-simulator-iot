@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/SmartValve.gd" id="1"]
+
+[node name="SmartValve" type="Node3D"]
+script = ExtResource("1")
+device_id = "water_valve"
+start_powered = true
+interact_point = Vector3(0, 1, -1.0)
+interact_radius = 1.5
+label_offset = Vector3(0, 1.05, 0)

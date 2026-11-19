@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/devices/SmokeDetector.gd" id="1"]
+
+[node name="SmokeDetector" type="Node3D"]
+script = ExtResource("1")
+device_id = "smoke_detector"
+mount_height = 2.58
+interact_point = Vector3(0, 1, 0.5)
+interact_radius = 1.4
+label_offset = Vector3(0, 2.2, 0)
